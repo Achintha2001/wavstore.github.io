@@ -1,0 +1,128 @@
+*{ 
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family:sans-serif;
+	color:#D6E0EC;
+	background-color:#13031C;
+
+
+}
+.banner{
+	background-color: black;
+	padding: 0px 40px 10px 40px;
+	background: rgb(0,0,0,0,7);
+	width: 100%;
+	background-size: cover;
+	background-blend-mode:darken;
+	height:100px;
+}	
+li ,a ,button {
+	margin-right: 20px;
+	font-family:sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	color: #c34cc0;
+	text-decoration: none;
+
+}
+
+.sign button:hover{
+	color:black;
+    background-color:#34F4F2;
+}
+.sign button  {
+	font-weight:bold;
+	padding: 10px 30px;
+	background-color:/*#c34cc0*/#2DD0CE;
+	color: black;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+}
+
+header{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;padding: 20px 25px;
+	color: white;
+}
+nav{
+	position: sticky;
+}
+.nav_links li{
+	display: inline-block;
+	padding: 0px 5px;
+
+}
+.nav_links li a{
+	transition: all 0.3s ease 0s;
+}
+li a:hover{
+	color:#2DD0CE;
+	padding:18px 12px 18px 12px;
+}
+.classic-img{
+	width:40%;
+	height: 40%;
+	margin: 30px;
+}
+.heading h1{
+	color:#85929E;
+}
+.heading p{
+	margin: 20px 40px  20px 40px;
+	color: gray;
+}
+.content{
+	position: absolute;
+	width: 80%;
+	left: 20%;
+	
+}
+audio{
+	margin-top: 1px;
+	transition: all 0.5s linear;
+	box-shadow: 2px 2px 4px 0px black;
+	border-radius: 1px 0px 0px 1px;
+	border: solid 1px #f1f3f4;
+	background-color: #f1f3f4;
+}
+.file{
+	width: 70%;
+	padding:5px;
+	margin:10px;
+	border-radius:3px;
+
+}
+.content .track{
+	display: flex;
+}
+.content h1{
+	font-size: 20px;
+	color:#85929E;
+	margin-bottom: 5px;
+}
+.content p{
+	padding: 5px;
+	font-size:15px;
+	color:#85929E;
+}
+.play-btn{
+	width: 100%;
+	padding-top:0px;
+}
+.content a{
+	background-color:#2DD0CE;
+	color:black;
+	margin: 10px 0px 2px 0px;
+	padding: 19px 8px 17px 8px;
+	font-weight: bold;
+	border-radius:0px 1px 1px 0px;
+	position: relative;
+	bottom: 9px;
+}
+.content a:hover{
+	background-color:#34F4F2;
+	color:black;
+}
