@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register Form</title>
+	<link rel="stylesheet" type="text/css" href="register.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel ="icon" type="x-icon" href="img/web-icon.png">
+</head>
+<body style="background-image:url(img/banner-bg.jpg);">
+	<div class="register-form">
+		<h1>Create Account</h1>
+			<form id = "myForm" action ="#">
+				<div class="input-line">
+					<img src="img/avatar.png" class="unkown">
+					<input type="text" name="" class="inpt" placeholder="First Name" id="fName">
+					<input type="text" name="" class="inpt" placeholder="Second Name" id="sName">
+				</div>
+				<div class="input-line">
+					<input type="text" name="" class="inpt" placeholder="E Mail" id="mail">
+					<input type="password" name=""  class="inpt" placeholder="Password" id="password">
+				</div>
+					<p id="demo" style="text-align: center;margin:5px; font-size:12px;position:absolute;right:95px;top:240px;"></p>
+				<div class="input-line">
+					<input type="button" name="" value="Create" class="btn" id="create">
+					<input type = "button" class="btn" value = "Reset" onClick = "myFunction()">
+				</div>
+					<p id="done" style="text-align: center;margin-top: 20px; font-weight: bold;"></p>
+			</form>
+	</div>
+
+	<script type="text/javascript">
+
+		//variable list
+		var firstName =document.querySelector('#fName')
+		var pass= document.querySelector('#password')
+		var secondName =document.querySelector('#sName')
+		var gmail =document.getElementById('mail');
+		var PW =document.getElementById('password');
+		var createBtn =document.getElementById('create')
+		var resetBtn=document.getElementById('reset')
+
+		//password validation
+		pass.addEventListener('keyup',function(){
+			if(pass.value.length ==0 || pass.value.length <8){
+
+			 	document.getElementById('demo').innerHTML="! Password must be 8 characters";
+			 	demo.style.color='red';
+			 	pass.style.border='1px solid red';
+			}
+			else{
+			 	document.getElementById('demo').innerHTML="Password is OK";
+			 	demo.style.color='#2DD0CE';
+			 	pass.style.border='1px solid #2DD0CE';
+			}
+
+			//inputs cheking
+			if(firstName.value.length >0){
+			 		firstName.style.border='1px solid #2DD0CE';
+		    }
+
+			else{
+			 	document.getElementById('done').innerHTML="! You can't Empty in any value";
+			 	firstName.style.border='1px solid red';
+			}
+			if(secondName.value.length >0){
+			 		secondName.style.border='1px solid #2DD0CE';
+		    }
+
+			else{
+			 	document.getElementById('done').innerHTML="! You can't Empty in any value";
+			 	secondName.style.border='1px solid red';
+			}
+			if(gmail.value.length >0){
+			 		gmail.style.border='1px solid #2DD0CE';
+		    }
+
+			else{
+			 	document.getElementById('done').innerHTML="! You can't Empty in any value";
+			 	gmail.style.border='1px solid red';
+			}
+			
+			//Notification after click "creat" buttn
+			createBtn.onclick=function(){
+			if(firstName.value.length ==1|| firstName.value.length < 8){
+				firstName.style.border='1px solid red';
+			}
+			else if(gmail.value.length ==1|| gmail.value.length < 8){
+				gmail.style.border='1px solid red';
+			}
+			else if(secondName.value.length ==1|| secondName.value.length < 8){
+				secondName.style.border='1px solid red';
+			}
+			else {
+				document.getElementById('done').innerHTML="Account has been Created !";
+				done.style.color='#2DD0CE';
+			}
+			
+		}	 
+			
+		})
+		//Notification after click "reset" buttn
+		var firstName =document.getElementById('fName')
+		var pass= document.getElementById('password')
+		var secondName =document.getElementById('sName')
+		var gmail =document.getElementById('mail');
+		var resetBtn=document.getElementById('reset')		
+			function myFunction() {
+  			document.getElementById("myForm").reset();
+			}
+			//document.getElementById('secondName').reset(); 
+			//document.getElementById('gmail').reset(); 
+			//document.getElementById('pass').reset();  
+			
+
+	</script>
+</body>
+</html>

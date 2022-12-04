@@ -1,0 +1,134 @@
+*{ 
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family:sans-serif;
+	color:#D6E0EC;
+
+/*linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, )),*/
+
+}
+@media (max-width:1920px) and (min-width:768px){
+
+/*body{
+	background-color: #13031C;
+}*/
+.banner{
+	padding: 0px 40px 10px 40px;
+	background: rgb(0,0,0,0.5);
+	background-color: #13031C;
+	width: 100%;
+	background-size: cover;
+	background-blend-mode:darken;
+	height: 80px;
+}	
+
+li ,a ,button {
+	margin-right: 20px;
+	font-family:sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	color: #c34cc0;
+	text-decoration: none;
+
+}
+header nav ul {
+	display: flex;
+}
+
+.sign button:hover{
+	color:black;
+    background-color:#34F4F2;
+}
+.sign button{
+	position:relative;
+	left: 20px;
+	font-weight:bold;
+	padding: 10px 30px;
+	background-color:/*#c34cc0*/#2DD0CE;
+	color: black;
+	border: none;
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+
+
+header{
+	margin:0px 20px 20px 20px;
+	display:flex;
+	justify-content: space-between;
+	align-items: center;padding: 10px 15px;
+	color: white;
+}
+.nav-icon{
+	width: 60px;
+	height: 60px;
+}
+.nav-head{
+	margin-left:30px;
+	font-size:2.5vw;
+}
+.nav_links li{
+	display: inline-block;
+	padding: 0px 2px;
+
+}
+.nav_links li a{
+	transition: all 0.3s ease 0s;
+}
+li a:hover{
+	color:#2DD0CE;
+	padding:18px 12px 18px 12px;
+    
+}
+.row{
+	border-radius: 5px;
+	display: flex;
+	justify-content: space-between;
+	background-color:#E7ECEF;
+	margin: 40px;
+	padding: 0px;
+}
+.row .image-col{
+	width: 50%;
+
+}
+.row .thumbnail{
+	width: 100%;
+	height: 400px;
+}
+.row .para-col{
+	padding: 10px 20px 10px 20px;
+	width: 50%;
+
+}
+.row .para-col p{
+	color:#85929E; 
+}
+.row .para-col h1{
+	color:#85929E;
+	padding-bottom: 10px;
+
+}
+.row .para-col .download-btn{
+	text-align: center;
+	color:#E7ECEF;
+	background-color:#85929E;
+	position:relative;
+	top:20px;
+	padding:5px 20px;
+	width:100%;
+	border-radius:2px;
+	bottom:20px;
+}
+.row .para-col h2{
+	margin-top: 40px;
+	color: #85929E;
+}
+.row .para-col .play-btn{
+	color: #85929E;
+	border:box;
+	width: 100%;
+	margin-top: 20px;
+}

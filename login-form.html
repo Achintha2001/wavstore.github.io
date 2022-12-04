@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="login.css	">
+	<link rel ="icon" type="x-icon" href="img/web-icon.png">
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+<body style="background-image:url(img/banner-bg.jpg);">
+	<div class="login-form">
+		<img src="img/avatar.png" class="unkown">
+		<h1 class="heading">Get Start</h1>
+		<p class="txt">Username</p><br>
+			<input type="text" name="user" id="user" class="inpt" placeholder="Username">
+			<i class="fa fa-times u_times"></i>
+			<i class="fa fa-check u_check"></i><br>
+		<p class="txt">Password</p><br>
+			<input type="Password" name="Password" id="password" class="inpt" placeholder="Password">
+			<i class="fa fa-times u_times"></i>
+			<i class="fa fa-check u_check"></i><br><br>
+			<div style="display: flex;margin-right: 25px;margin-left: 25px;">
+				<input type="button" name="button" class="btn" value="Login" id="log-btn"
+				onclick="window.location.href='index.html'"><br>
+				<input type="button" name="button" class="btn" value="Sign" id="sign-btn">
+			</div>
+			<p id="if-succes" style="text-align: center;font-weight: bold;margin: 10px; color:#2DD0CE"></p>
+		<a href="register.html" class="register">Create Account</a>
+	</div>
+
+	<script type="text/javascript">
+		var user =document.querySelector('#user')
+		user.addEventListener('keyup',function(){
+			var u_times = document.querySelector('.u_times');
+			var u_check = document.querySelector('.u_check');
+			if (user.value.length ==0|| user.value.length < 8){
+				user.style.border='1px solid red';
+			}
+			else{
+				user.style.border='1px solid #2DD0CE';
+			}
+
+		var pass=document.querySelector('#password')
+		pass.addEventListener('keyup',function(){
+			if (typeof value === "string"){
+				pass.style.border='1px solid red';
+			}
+			else if(pass.value.length ==1|| pass.value.length < 8){
+				pass.style.border='1px solid red';
+			}
+			else{
+				pass.style.border='1px solid #2DD0CE';
+		}
+	
+		var logBtn = document.getElementById('log-btn');
+		logBtn.onclick=function(){
+			if(user.value.length==1|| user.value.length < 8){
+				pass.style.border='1px solid red';
+			}
+			else if(typeof pass === 'string'){
+				pass.style.border='1px solid red';
+			}
+			else if(pass.value.length==1|| pass.value.length < 8){
+				pass.style.border='1px solid red';
+			}
+			else{
+				document.getElementById('if-succes').innerHTML="Login is succesful";
+				logBtn.addEventListener('click', () => {
+  				window.open('index.html', '_blank');
+				});
+			}
+
+		}
+		const signBtn = document.getElementById('sign-btn');
+
+				signBtn.addEventListener('click', () => {
+  				window.open('https://www.w3schools.com', '_blank');
+				});
+
+		})
+		})	
+	</script>
+		
+	
+</body>
+</html>
+
